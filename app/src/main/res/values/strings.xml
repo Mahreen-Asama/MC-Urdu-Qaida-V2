@@ -46,10 +46,26 @@
     <string name="d2">دوات</string>
 
     <string name="dd">ڈ</string>
-    <string name="dd1"></string>
-    <string name="dd2">خرگوش</string>
+    <string name="dd1">ڈاکٹر</string>
+    <string name="dd2">ڈُگڈُگی</string>
 
-    <string name="zl">خ</string>
-    <string name="zl1">خوبانی</string>
-    <string name="zl2">خرگوش</string>
+    <string name="zl">ذ</string>
+    <string name="zl1">ذخیرہ</string>
+    <string name="zl2">ذہب</string>
+
+    <string name="r">ر</string>
+    <string name="r1">ریچھ</string>
+    <string name="r2">رکشا</string>
+
+    <string name="rrl">ڑ</string>
+    <string name="rr1">گڑیا</string>
+    <string name="rr2">ربڑ</string>
+
+    <string name="z">ذ</string>
+    <string name="z1">ذخیرہ</string>
+    <string name="z2">ذہب</string>
+
+    <string name="y">ذ</string>
+    <string name="y1">ذخیرہ</string>
+    <string name="y2">ذہب</string>
 </resources>
