@@ -10,58 +10,56 @@
         android:id="@+id/harf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="31dp"
+        android:layout_marginEnd="35dp"
         android:fontFamily="monospace"
         android:text="@string/a"
         android:textColor="#2342F1"
         android:textSize="160sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/object1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="122dp"
-        android:fontFamily="monospace"
-        android:text="@string/a1"
-        android:textColor="#2342F1"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/object2"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/object2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="66dp"
         android:fontFamily="monospace"
         android:text="@string/a2"
         android:textColor="#2342F1"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_prev"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img1" />
 
     <ImageView
         android:id="@+id/img1"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="88dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toStartOf="@+id/object1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/anar" />
+
+    <TextView
+        android:id="@+id/object1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="monospace"
+        android:text="@string/a1"
+        android:textColor="#2342F1"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_prev"
+        app:layout_constraintEnd_toStartOf="@+id/harf" />
 
     <ImageView
         android:id="@+id/img2"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/angoor" />
 
     <Button
@@ -69,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="18dp"
         android:backgroundTint="#00BCD4"
         android:foreground="@android:drawable/ic_media_next"
         app:cornerRadius="500dp"
@@ -82,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="18dp"
         android:backgroundTint="#00BCD4"
         android:foreground="@android:drawable/ic_media_previous"
         app:cornerRadius="500dp"

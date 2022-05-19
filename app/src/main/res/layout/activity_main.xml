@@ -2,7 +2,278 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".MainActivity"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-11dp"
+    tools:layout_editor_absoluteY="105dp">
 
+    <Button
+        android:id="@+id/alif25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <Button
+        android:id="@+id/alif27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <Button
+        android:id="@+id/alif28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <Button
+        android:id="@+id/alif26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <Button
+        android:id="@+id/alif21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <Button
+        android:id="@+id/alif23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <Button
+        android:id="@+id/alif24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <Button
+        android:id="@+id/alif22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <Button
+        android:id="@+id/alif17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/alif19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/alif20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/alif18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Button
+        android:id="@+id/alif13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/alif15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/alif16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/alif14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/alif9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/alif11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/alif12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/alif10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/alif2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:text="@string/aa"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/alif3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:text="@string/b"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/alif4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:text="@string/p"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/alif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6200EA"
+        android:text="@string/a"
+        android:textSize="60sp"
+        app:cornerRadius="500dp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Urdu Qaida V2</string>
+    <string name="app_name">اُردوقاعدہ</string>
+
+    <string name="a">ا</string>
+    <string name="a1">انار</string>
+    <string name="a2">انگور</string>
+
+    <string name="aa">آ</string>
+    <string name="aa1">آم</string>
+    <string name="aa2">آنکھ</string>
+
+    <string name="b">ب</string>
+    <string name="b1">بلّی</string>
+    <string name="b2">بستہ</string>
+
+    <string name="p">پ</string>
+    <string name="p1">پتنگ</string>
+    <string name="p2">پنکھا</string>
 </resources>
