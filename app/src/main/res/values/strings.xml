@@ -16,4 +16,16 @@
     <string name="p">پ</string>
     <string name="p1">پتنگ</string>
     <string name="p2">پنکھا</string>
+
+    <string name="t">ت</string>
+    <string name="t1">تتلی</string>
+    <string name="t2">تربوز</string>
+
+    <string name="ta">ٹ</string>
+    <string name="ta1">ٹماٹر</string>
+    <string name="ta2">ٹوپی</string>
+
+    <string name="sy">ث</string>
+    <string name="sy1">ثمر</string>
+    <string name="sy2">ثابت</string>
 </resources>
