@@ -25,7 +25,31 @@
     <string name="ta1">ٹماٹر</string>
     <string name="ta2">ٹوپی</string>
 
-    <string name="sy">ث</string>
-    <string name="sy1">ثمر</string>
-    <string name="sy2">ثابت</string>
+    <string name="g">ج</string>
+    <string name="g1">جہاز</string>
+    <string name="g2">جگ</string>
+
+    <string name="ch">چ</string>
+    <string name="ch1">چڑیا</string>
+    <string name="ch2">چاقو</string>
+
+    <string name="H">ح</string>
+    <string name="H1">حوض</string>
+    <string name="H2">حلوائ</string>
+
+    <string name="kh">خ</string>
+    <string name="kh1">خوبانی</string>
+    <string name="kh2">خرگوش</string>
+
+    <string name="d">د</string>
+    <string name="d1">درخت</string>
+    <string name="d2">دوات</string>
+
+    <string name="dd">ڈ</string>
+    <string name="dd1"></string>
+    <string name="dd2">خرگوش</string>
+
+    <string name="zl">خ</string>
+    <string name="zl1">خوبانی</string>
+    <string name="zl2">خرگوش</string>
 </resources>
