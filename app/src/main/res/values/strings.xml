@@ -68,4 +68,20 @@
     <string name="y">ژ</string>
     <string name="y1">ژالہ باری</string>
     <string name="y2">ٹیلی ویژن</string>
+
+    <string name="s">س</string>
+    <string name="s1">سیب</string>
+    <string name="s2">سائیکل</string>
+
+    <string name="sh">ش</string>
+    <string name="sh1">شیر</string>
+    <string name="sh2">شلجم</string>
+
+    <string name="su">ص</string>
+    <string name="su1">صوفہ</string>
+    <string name="su2">صابن</string>
+
+    <string name="zu">ض</string>
+    <string name="zu1">ضعیف</string>
+    <string name="zu2">ضرب</string>
 </resources>
