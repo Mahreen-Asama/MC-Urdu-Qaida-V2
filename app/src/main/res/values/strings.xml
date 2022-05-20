@@ -85,20 +85,65 @@
     <string name="zu1">ضعیف</string>
     <string name="zu2">ضرب</string>
 
-
     <string name="to">ط</string>
-    <string name="to1">ضعیف</string>
-    <string name="to2">ضرب</string>
+    <string name="to1">طوطا</string>
+    <string name="to2">طبل</string>
 
-    <string name="zo">ض</string>
-    <string name="zo1">ضعیف</string>
-    <string name="zo2">ضرب</string>
+    <string name="zo">ظ</string>
+    <string name="zo1">ظریف</string>
+    <string name="zo2">ظروف</string>
 
-    <string name="zi">ض</string>
-    <string name="zi1">ضعیف</string>
-    <string name="zi2">ضرب</string>
+    <string name="an">ع</string>
+    <string name="an1">عقاب</string>
+    <string name="an2">عینک</string>
 
-    <string name="gi">ض</string>
-    <string name="gi1">ضعیف</string>
-    <string name="gi2">ضرب</string>
+    <string name="gn">غ</string>
+    <string name="gn1">غبارہ</string>
+    <string name="gn2">غسل خانہ</string>
+
+    <string name="f">ف</string>
+    <string name="f1">فاختہ</string>
+    <string name="f2">فراک</string>
+
+    <string name="q">ق</string>
+    <string name="q1">قمیص</string>
+    <string name="q2">قلم</string>
+
+    <string name="k">ک</string>
+    <string name="k1">کرسی</string>
+    <string name="k2">کمپیوٹر</string>
+
+    <string name="gf">گ</string>
+    <string name="gf1">گاجر</string>
+    <string name="gf2">گلہری</string>
+
+
+    <string name="l">ل</string>
+    <string name="l1">لومڑی</string>
+    <string name="l2">لیموں</string>
+
+    <string name="m">م</string>
+    <string name="m1">مالٹا</string>
+    <string name="m2">مچھلی</string>
+
+    <string name="n">ن</string>
+    <string name="n1">ناریل</string>
+    <string name="n2">نلکا</string>
+
+    <string name="w">و</string>
+    <string name="w1">وکیل</string>
+    <string name="w2">ورق</string>
+
+    <string name="h">ہ</string>
+    <string name="h1">ہاتھی</string>
+    <string name="h2">ہاتھ</string>
+
+    <string name="hm">ء</string>
+    <string name="hm1">چاءے</string>
+    <string name="hm2">آئینہ</string>
+
+    <string name="yy">ی ے</string>
+    <string name="yy1">یکہ</string>
+    <string name="yy2">یادگار</string>
+
 </resources>
