@@ -61,11 +61,11 @@
     <string name="rr1">گڑیا</string>
     <string name="rr2">ربڑ</string>
 
-    <string name="z">ذ</string>
-    <string name="z1">ذخیرہ</string>
-    <string name="z2">ذہب</string>
+    <string name="z">ز</string>
+    <string name="z1">زرافہ</string>
+    <string name="z2">زیور</string>
 
-    <string name="y">ذ</string>
-    <string name="y1">ذخیرہ</string>
-    <string name="y2">ذہب</string>
+    <string name="y">ژ</string>
+    <string name="y1">ژالہ باری</string>
+    <string name="y2">ٹیلی ویژن</string>
 </resources>
