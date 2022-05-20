@@ -84,4 +84,21 @@
     <string name="zu">ض</string>
     <string name="zu1">ضعیف</string>
     <string name="zu2">ضرب</string>
+
+
+    <string name="to">ط</string>
+    <string name="to1">ضعیف</string>
+    <string name="to2">ضرب</string>
+
+    <string name="zo">ض</string>
+    <string name="zo1">ضعیف</string>
+    <string name="zo2">ضرب</string>
+
+    <string name="zi">ض</string>
+    <string name="zi1">ضعیف</string>
+    <string name="zi2">ضرب</string>
+
+    <string name="gi">ض</string>
+    <string name="gi1">ضعیف</string>
+    <string name="gi2">ضرب</string>
 </resources>
