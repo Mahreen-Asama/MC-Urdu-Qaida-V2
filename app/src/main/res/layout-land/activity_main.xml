@@ -9,6 +9,42 @@
     tools:layout_editor_absoluteY="105dp">
 
     <Button
+        android:id="@+id/by"
+        android:layout_width="63dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#6200EA"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/by"
+        android:textSize="34sp"
+        app:cornerRadius="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaf"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/hm"
+        android:layout_width="63dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#6200EA"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/hm"
+        android:textSize="34sp"
+        app:cornerRadius="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/h"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cy"
+        app:layout_constraintTop_toBottomOf="@+id/fy"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
         android:id="@+id/gaf"
         android:layout_width="63dp"
         android:layout_height="75dp"
@@ -17,11 +53,11 @@
         android:text="@string/gf"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/h"
+        app:layout_constraintBottom_toTopOf="@+id/by"
         app:layout_constraintEnd_toStartOf="@+id/kaf"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aien"
+        app:layout_constraintTop_toBottomOf="@+id/sheen"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -33,11 +69,11 @@
         android:text="@string/k"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/wao"
+        app:layout_constraintBottom_toTopOf="@+id/by"
         app:layout_constraintEnd_toStartOf="@+id/qaf"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/gaf"
-        app:layout_constraintTop_toBottomOf="@+id/zoy"
+        app:layout_constraintTop_toBottomOf="@+id/seen"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -49,11 +85,11 @@
         android:text="@string/rr"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/zuad"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gain"
+        app:layout_constraintEnd_toStartOf="@+id/ry"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/zy"
-        app:layout_constraintTop_toBottomOf="@+id/kh"
+        app:layout_constraintTop_toBottomOf="@+id/tay"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -65,11 +101,11 @@
         android:text="@string/y"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/toy"
+        app:layout_constraintBottom_toTopOf="@+id/qaf"
         app:layout_constraintEnd_toStartOf="@+id/zy"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/seen"
-        app:layout_constraintTop_toBottomOf="@+id/ddal"
+        app:layout_constraintTop_toBottomOf="@+id/jeem"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -81,11 +117,11 @@
         android:text="@string/s"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/zoy"
+        app:layout_constraintBottom_toTopOf="@+id/kaf"
         app:layout_constraintEnd_toStartOf="@+id/yay"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/sheen"
-        app:layout_constraintTop_toBottomOf="@+id/zal"
+        app:layout_constraintTop_toBottomOf="@+id/chy"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -97,11 +133,11 @@
         android:text="@string/z"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/alif17"
+        app:layout_constraintBottom_toTopOf="@+id/fy"
         app:layout_constraintEnd_toStartOf="@+id/arry"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/yay"
-        app:layout_constraintTop_toBottomOf="@+id/dal"
+        app:layout_constraintTop_toBottomOf="@+id/say"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -113,11 +149,11 @@
         android:text="@string/sh"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/aien"
+        app:layout_constraintBottom_toTopOf="@+id/gaf"
         app:layout_constraintEnd_toStartOf="@+id/seen"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ry"
+        app:layout_constraintTop_toBottomOf="@+id/hy"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -129,11 +165,11 @@
         android:text="@string/d"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/zy"
+        app:layout_constraintBottom_toTopOf="@+id/alif17"
         app:layout_constraintEnd_toStartOf="@+id/kh"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ddal"
-        app:layout_constraintTop_toBottomOf="@+id/say"
+        app:layout_constraintTop_toBottomOf="@+id/alifmad"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -145,11 +181,11 @@
         android:text="@string/dd"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/yay"
+        app:layout_constraintBottom_toTopOf="@+id/toy"
         app:layout_constraintEnd_toStartOf="@+id/dal"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/zal"
-        app:layout_constraintTop_toBottomOf="@+id/jeem"
+        app:layout_constraintTop_toBottomOf="@+id/bay"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -161,11 +197,11 @@
         android:text="@string/kh"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/arry"
+        app:layout_constraintBottom_toTopOf="@+id/zuad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/dal"
-        app:layout_constraintTop_toBottomOf="@+id/tay"
+        app:layout_constraintTop_toBottomOf="@+id/alif"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -177,11 +213,11 @@
         android:text="@string/r"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/sheen"
+        app:layout_constraintBottom_toTopOf="@+id/aien"
         app:layout_constraintEnd_toStartOf="@+id/zal"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hy"
+        app:layout_constraintStart_toEndOf="@+id/arry"
+        app:layout_constraintTop_toBottomOf="@+id/ty"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -193,132 +229,108 @@
         android:text="@string/zl"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/seen"
+        app:layout_constraintBottom_toTopOf="@+id/zoy"
         app:layout_constraintEnd_toStartOf="@+id/ddal"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ry"
-        app:layout_constraintTop_toBottomOf="@+id/chy"
+        app:layout_constraintTop_toBottomOf="@+id/pay"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/noon"
         android:layout_width="63dp"
         android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
         android:backgroundTint="#6200EA"
         android:fontFamily="sans-serif-black"
         android:text="@string/n"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/cy"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/meem"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/wao"
-        app:layout_constraintTop_toBottomOf="@+id/qaf"
+        app:layout_constraintTop_toBottomOf="@+id/zoy"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/h"
         android:layout_width="63dp"
         android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
         android:backgroundTint="#6200EA"
         android:fontFamily="sans-serif-black"
         android:text="@string/h"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/by"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/wao"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gaf"
+        app:layout_constraintStart_toEndOf="@+id/hm"
+        app:layout_constraintTop_toBottomOf="@+id/gain"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/wao"
         android:layout_width="63dp"
         android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
         android:backgroundTint="#6200EA"
         android:fontFamily="sans-serif-black"
         android:text="@string/w"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/by"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/noon"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/h"
-        app:layout_constraintTop_toBottomOf="@+id/kaf"
+        app:layout_constraintTop_toBottomOf="@+id/aien"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/meem"
         android:layout_width="63dp"
         android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
         android:backgroundTint="#6200EA"
         android:fontFamily="sans-serif-black"
         android:text="@string/m"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/hm"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/lam"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/noon"
-        app:layout_constraintTop_toBottomOf="@+id/fy"
+        app:layout_constraintTop_toBottomOf="@+id/toy"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/lam"
         android:layout_width="63dp"
         android:layout_height="75dp"
+        android:layout_marginStart="2dp"
         android:backgroundTint="#6200EA"
         android:fontFamily="sans-serif-black"
         android:text="@string/l"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/hm"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/meem"
-        app:layout_constraintTop_toBottomOf="@+id/gain"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/hm"
-        android:layout_width="63dp"
-        android:layout_height="75dp"
-        android:backgroundTint="#6200EA"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/hm"
-        android:textSize="34sp"
-        app:cornerRadius="500dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/cy"
-        app:layout_constraintTop_toBottomOf="@+id/meem"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/by"
-        android:layout_width="63dp"
-        android:layout_height="75dp"
-        android:backgroundTint="#6200EA"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/by"
-        android:textSize="34sp"
-        app:cornerRadius="500dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cy"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wao"
+        app:layout_constraintTop_toBottomOf="@+id/alif17"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/cy"
         android:layout_width="63dp"
         android:layout_height="75dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
         android:backgroundTint="#6200EA"
         android:fontFamily="sans-serif-black"
         android:text="@string/cy"
@@ -328,7 +340,7 @@
         app:layout_constraintEnd_toStartOf="@+id/hm"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/by"
-        app:layout_constraintTop_toBottomOf="@+id/noon"
+        app:layout_constraintTop_toBottomOf="@+id/qaf"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -340,11 +352,11 @@
         android:text="@string/f"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/meem"
+        app:layout_constraintBottom_toTopOf="@+id/hm"
         app:layout_constraintEnd_toStartOf="@+id/gain"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/qaf"
-        app:layout_constraintTop_toBottomOf="@+id/alif17"
+        app:layout_constraintTop_toBottomOf="@+id/zy"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -356,11 +368,11 @@
         android:text="@string/q"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/noon"
+        app:layout_constraintBottom_toTopOf="@+id/cy"
         app:layout_constraintEnd_toStartOf="@+id/fy"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/kaf"
-        app:layout_constraintTop_toBottomOf="@+id/toy"
+        app:layout_constraintTop_toBottomOf="@+id/yay"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -372,11 +384,11 @@
         android:text="@string/gn"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/lam"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/h"
+        app:layout_constraintEnd_toStartOf="@+id/aien"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fy"
-        app:layout_constraintTop_toBottomOf="@+id/zuad"
+        app:layout_constraintTop_toBottomOf="@+id/arry"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -388,11 +400,11 @@
         android:text="@string/su"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/gain"
+        app:layout_constraintBottom_toTopOf="@+id/lam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/alif17"
-        app:layout_constraintTop_toBottomOf="@+id/arry"
+        app:layout_constraintTop_toBottomOf="@+id/kh"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -404,11 +416,11 @@
         android:text="@string/an"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/gaf"
+        app:layout_constraintBottom_toTopOf="@+id/wao"
         app:layout_constraintEnd_toStartOf="@+id/zoy"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sheen"
+        app:layout_constraintStart_toEndOf="@+id/gain"
+        app:layout_constraintTop_toBottomOf="@+id/ry"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -420,11 +432,11 @@
         android:text="@string/zu"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/fy"
+        app:layout_constraintBottom_toTopOf="@+id/lam"
         app:layout_constraintEnd_toStartOf="@+id/zuad"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/toy"
-        app:layout_constraintTop_toBottomOf="@+id/zy"
+        app:layout_constraintTop_toBottomOf="@+id/dal"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -436,11 +448,11 @@
         android:text="@string/to"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/qaf"
+        app:layout_constraintBottom_toTopOf="@+id/meem"
         app:layout_constraintEnd_toStartOf="@+id/alif17"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/zoy"
-        app:layout_constraintTop_toBottomOf="@+id/yay"
+        app:layout_constraintTop_toBottomOf="@+id/ddal"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -452,11 +464,11 @@
         android:text="@string/zo"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/kaf"
+        app:layout_constraintBottom_toTopOf="@+id/noon"
         app:layout_constraintEnd_toStartOf="@+id/toy"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/aien"
-        app:layout_constraintTop_toBottomOf="@+id/seen"
+        app:layout_constraintTop_toBottomOf="@+id/zal"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -468,11 +480,11 @@
         android:text="@string/ta"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/kh"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/arry"
+        app:layout_constraintEnd_toStartOf="@+id/ty"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/say"
-        app:layout_constraintTop_toBottomOf="@+id/alif"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -484,11 +496,11 @@
         android:text="@string/ch"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/zal"
+        app:layout_constraintBottom_toTopOf="@+id/seen"
         app:layout_constraintEnd_toStartOf="@+id/jeem"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/hy"
-        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -500,11 +512,11 @@
         android:text="@string/H"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/ry"
+        app:layout_constraintBottom_toTopOf="@+id/sheen"
         app:layout_constraintEnd_toStartOf="@+id/chy"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ty"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -516,11 +528,11 @@
         android:text="@string/ss"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/dal"
+        app:layout_constraintBottom_toTopOf="@+id/zy"
         app:layout_constraintEnd_toStartOf="@+id/tay"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/jeem"
-        app:layout_constraintTop_toBottomOf="@+id/alifmad"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -532,11 +544,11 @@
         android:text="@string/g"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/ddal"
+        app:layout_constraintBottom_toTopOf="@+id/yay"
         app:layout_constraintEnd_toStartOf="@+id/say"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/chy"
-        app:layout_constraintTop_toBottomOf="@+id/bay"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
@@ -548,10 +560,10 @@
         android:text="@string/t"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/hy"
+        app:layout_constraintBottom_toTopOf="@+id/ry"
         app:layout_constraintEnd_toStartOf="@+id/pay"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tay"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
@@ -564,7 +576,7 @@
         android:text="@string/a"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/tay"
+        app:layout_constraintBottom_toTopOf="@+id/kh"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/alifmad"
@@ -580,7 +592,7 @@
         android:text="@string/aa"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/say"
+        app:layout_constraintBottom_toTopOf="@+id/dal"
         app:layout_constraintEnd_toStartOf="@+id/alif"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bay"
@@ -596,7 +608,7 @@
         android:text="@string/b"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/jeem"
+        app:layout_constraintBottom_toTopOf="@+id/ddal"
         app:layout_constraintEnd_toStartOf="@+id/alifmad"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/pay"
@@ -612,7 +624,7 @@
         android:text="@string/p"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/chy"
+        app:layout_constraintBottom_toTopOf="@+id/zal"
         app:layout_constraintEnd_toStartOf="@+id/bay"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ty"

@@ -25,6 +25,10 @@
     <string name="ta1">ٹماٹر</string>
     <string name="ta2">ٹوپی</string>
 
+    <string name="ss">ث</string>
+    <string name="ss1">ثمر</string>
+    <string name="ss2">ثابت</string>
+
     <string name="g">ج</string>
     <string name="g1">جہاز</string>
     <string name="g2">جگ</string>
@@ -57,7 +61,7 @@
     <string name="r1">ریچھ</string>
     <string name="r2">رکشا</string>
 
-    <string name="rrl">ڑ</string>
+    <string name="rr">ڑ</string>
     <string name="rr1">گڑیا</string>
     <string name="rr2">ربڑ</string>
 
@@ -141,6 +145,9 @@
     <string name="hm">ء</string>
     <string name="hm1">چاءے</string>
     <string name="hm2">آئینہ</string>
+
+    <string name="cy">ی</string>
+    <string name="by">ے</string>
 
     <string name="yy">ی ے</string>
     <string name="yy1">یکہ</string>
