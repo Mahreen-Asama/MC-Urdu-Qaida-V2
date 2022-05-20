@@ -9,6 +9,37 @@
     tools:layout_editor_absoluteY="105dp">
 
     <Button
+        android:id="@+id/btn_share_mp"
+        android:layout_width="63dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+        android:backgroundTint="#FAF6F6"
+        android:foreground="@drawable/ic_baseline_share_24"
+        android:foregroundTint="#000000"
+        android:textColorLink="#FBF8F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hm"
+        app:layout_constraintTop_toBottomOf="@+id/lam"
+        app:strokeColor="#FDF7F7"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="63dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+        android:foreground="@drawable/ic_baseline_backspace_24"
+        android:foregroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/by"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
         android:id="@+id/gaf"
         android:layout_width="63dp"
         android:layout_height="75dp"
@@ -225,7 +256,7 @@
         android:text="@string/h"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/by"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back"
         app:layout_constraintEnd_toStartOf="@+id/wao"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -273,7 +304,7 @@
         android:text="@string/l"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/hm"
+        app:layout_constraintBottom_toTopOf="@+id/btn_share_mp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/meem"
@@ -290,7 +321,7 @@
         android:textSize="34sp"
         app:cornerRadius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_share_mp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cy"
         app:layout_constraintTop_toBottomOf="@+id/meem"
@@ -308,8 +339,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cy"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
         app:layout_constraintTop_toBottomOf="@+id/wao"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
@@ -317,8 +347,6 @@
         android:id="@+id/cy"
         android:layout_width="63dp"
         android:layout_height="75dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
         android:backgroundTint="#6200EA"
         android:fontFamily="sans-serif-black"
         android:text="@string/cy"

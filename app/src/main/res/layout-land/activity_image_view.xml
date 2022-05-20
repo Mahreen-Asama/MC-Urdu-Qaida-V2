@@ -7,7 +7,7 @@
     tools:context=".ImageViewActivity">
 
     <Button
-        android:id="@+id/btn_share"
+        android:id="@+id/btn_share_mp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="43dp"
