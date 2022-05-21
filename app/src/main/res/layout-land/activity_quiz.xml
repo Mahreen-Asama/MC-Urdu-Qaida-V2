@@ -51,28 +51,30 @@
         android:id="@+id/option_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:text="ج"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/option_d"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choice_sentence"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:layout_editor_absoluteX="68dp" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/option_d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
         android:text="ف"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option_b"
-        tools:layout_editor_absoluteX="68dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_b" />
 
     <ImageView
         android:id="@+id/img_quiz"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choice_sentence"
@@ -82,21 +84,23 @@
         android:id="@+id/option_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
         android:text="ا"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/option_c"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choice_sentence"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:layout_editor_absoluteX="521dp" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/option_c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
         android:text="ٹ"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option_a"
-        tools:layout_editor_absoluteX="521dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_a" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

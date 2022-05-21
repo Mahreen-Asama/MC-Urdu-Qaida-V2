@@ -4,8 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back33"
     tools:context=".ChoiceActivity">
+
+    <Button
+        android:id="@+id/btn_share_mp3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:backgroundTint="#FAF6F6"
+        android:foreground="@drawable/ic_baseline_share_24"
+        android:foregroundTint="#000000"
+        android:textColorLink="#FBF8F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#FDF7F7"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_learn"

@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import java.util.logging.Handler;
+import android.os.Handler;
 
 public class SplashActivity extends AppCompatActivity {
 
