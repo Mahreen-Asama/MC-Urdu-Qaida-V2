@@ -26,18 +26,18 @@
         android:text="ٹیسٹ دیں"
         android:textSize="60sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/img_repository"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_learn" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_repository"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_quiz"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/capture" />
 </androidx.constraintlayout.widget.ConstraintLayout>
