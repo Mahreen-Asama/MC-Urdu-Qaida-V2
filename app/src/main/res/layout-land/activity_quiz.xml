@@ -39,26 +39,13 @@
         android:id="@+id/choice_sentence"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="50dp"
         android:text="درست حرف کا انتخاب کریں"
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_share_mp2" />
-
-    <Button
-        android:id="@+id/option_d"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ف"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/option_c"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option_b" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/option_b"
@@ -67,12 +54,19 @@
         android:text="ج"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/option_d"
-        app:layout_constraintEnd_toStartOf="@+id/option_a"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_quiz"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintTop_toBottomOf="@+id/choice_sentence"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="68dp" />
+
+    <Button
+        android:id="@+id/option_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ف"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_b"
+        tools:layout_editor_absoluteX="68dp" />
 
     <ImageView
         android:id="@+id/img_quiz"
@@ -91,11 +85,9 @@
         android:text="ا"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/option_c"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/option_b"
-        app:layout_constraintTop_toBottomOf="@+id/img_quiz"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintTop_toBottomOf="@+id/choice_sentence"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="521dp" />
 
     <Button
         android:id="@+id/option_c"
@@ -104,9 +96,7 @@
         android:text="ٹ"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/option_d"
-        app:layout_constraintTop_toBottomOf="@+id/option_a" />
+        app:layout_constraintTop_toBottomOf="@+id/option_a"
+        tools:layout_editor_absoluteX="521dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
