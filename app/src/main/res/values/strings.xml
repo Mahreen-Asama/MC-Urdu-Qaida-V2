@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">اُردو قاعدہ</string>
+    <string name="learn">قاعدہ پڑھیں</string>
+    <string name="quiz">ٹیسٹ دیں</string>
 
     <string name="a">ا</string>
     <string name="a1">انار</string>
