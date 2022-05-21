@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <Button
+        android:id="@+id/btn_share_mp2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:backgroundTint="#FAF6F6"
+        android:foreground="@drawable/ic_baseline_share_24"
+        android:foregroundTint="#000000"
+        android:textColorLink="#FBF8F8"
+        app:strokeColor="#FDF7F7"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btn_back2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:foreground="@drawable/ic_baseline_backspace_24"
+        android:foregroundTint="#000000"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/choice_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="درست حرف کا انتخاب کریں"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <Button
+        android:id="@+id/option_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ف"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option_c"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_b" />
+
+    <Button
+        android:id="@+id/option_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ج"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/option_d"
+        app:layout_constraintEnd_toStartOf="@+id/option_a"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_quiz"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <ImageView
+        android:id="@+id/img_quiz"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice_sentence"
+        app:srcCompat="@drawable/anar" />
+
+    <Button
+        android:id="@+id/option_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ا"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/option_c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option_b"
+        app:layout_constraintTop_toBottomOf="@+id/img_quiz"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/option_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ٹ"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option_d"
+        app:layout_constraintTop_toBottomOf="@+id/option_a" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

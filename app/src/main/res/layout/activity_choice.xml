@@ -23,7 +23,7 @@
         android:id="@+id/btn_quiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quiz"
+        android:text="ٹیسٹ دیں"
         android:textSize="60sp"
         app:cornerRadius="500dp"
         app:layout_constraintBottom_toTopOf="@+id/img_repository"

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back33"
     tools:context=".ImageViewActivity">
 
     <Button
@@ -28,7 +27,7 @@
         android:layout_marginBottom="124dp"
         android:fontFamily="monospace"
         android:text="@string/a1"
-        android:textColor="#2342F1"
+        android:textColor="#D50000"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/object2"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -40,7 +39,7 @@
         android:layout_marginEnd="52dp"
         android:fontFamily="monospace"
         android:text="@string/a"
-        android:textColor="#2342F1"
+        android:textColor="#D50000"
         android:textSize="160sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,7 +52,7 @@
         android:layout_marginBottom="52dp"
         android:fontFamily="monospace"
         android:text="@string/a2"
-        android:textColor="#2342F1"
+        android:textColor="#D50000"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_prev"
         app:layout_constraintEnd_toEndOf="parent" />
