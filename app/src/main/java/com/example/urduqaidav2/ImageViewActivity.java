@@ -89,7 +89,7 @@ public class ImageViewActivity extends AppCompatActivity {
                 n1 = getResources().getString(R.string.ta1);
                 n2 = getResources().getString(R.string.ta2);
                 image1 = R.drawable.tomato;
-                image2 = R.drawable.to;
+                image2 = R.drawable.topi;
                 break;
             case R.id.say:
                 h = getResources().getString(R.string.ss);
@@ -231,6 +231,92 @@ public class ImageViewActivity extends AppCompatActivity {
                 image1 = R.drawable.balooen;
                 image2 = R.drawable.bathroom;
                 break;
+            case R.id.fy:
+                h = getResources().getString(R.string.f);
+                n1 = getResources().getString(R.string.f1);
+                n2 = getResources().getString(R.string.f2);
+                image1 = R.drawable.dove;
+                image2 = R.drawable.frock;
+                break;
+            case R.id.qaf:
+                h = getResources().getString(R.string.q);
+                n1 = getResources().getString(R.string.q1);
+                n2 = getResources().getString(R.string.q2);
+                image1 = R.drawable.shirt;
+                image2 = R.drawable.pen;
+                break;
+            case R.id.kaf:
+                h = getResources().getString(R.string.k);
+                n1 = getResources().getString(R.string.k1);
+                n2 = getResources().getString(R.string.k2);
+                image1 = R.drawable.chair;
+                image2 = R.drawable.pc_removebg_preview;
+                break;
+            case R.id.gaf:
+                h = getResources().getString(R.string.gf);
+                n1 = getResources().getString(R.string.gf1);
+                n2 = getResources().getString(R.string.gf2);
+                image1 = R.drawable.gajar;
+                image2 = R.drawable.gul;
+                break;
+            case R.id.lam:
+                h = getResources().getString(R.string.l);
+                n1 = getResources().getString(R.string.l1);
+                n2 = getResources().getString(R.string.l2);
+                image1 = R.drawable.lomri;
+                image2 = R.drawable.lemon;
+                break;
+            case R.id.meem:
+                h = getResources().getString(R.string.m);
+                n1 = getResources().getString(R.string.m1);
+                n2 = getResources().getString(R.string.m2);
+                image1 = R.drawable.orange;
+                image2 = R.drawable.fish;
+                break;
+            case R.id.noon:
+                h = getResources().getString(R.string.n);
+                n1 = getResources().getString(R.string.n1);
+                n2 = getResources().getString(R.string.n2);
+                image1 = R.drawable.coco;
+                image2 = R.drawable.nalka;
+                break;
+            case R.id.wao:
+                h = getResources().getString(R.string.w);
+                n1 = getResources().getString(R.string.w1);
+                n2 = getResources().getString(R.string.w2);
+                image1 = R.drawable.lawyer;
+                image2 = R.drawable.wark;
+                break;
+            case R.id.h:
+                h = getResources().getString(R.string.h);
+                n1 = getResources().getString(R.string.h1);
+                n2 = getResources().getString(R.string.h2);
+                image1 = R.drawable.hathi;
+                image2 = R.drawable.hand;
+                break;
+            case R.id.hm:
+                h = getResources().getString(R.string.hm);
+                n1 = getResources().getString(R.string.hm1);
+                n2 = getResources().getString(R.string.hm2);
+                image1 = R.drawable.tea;
+                image2 = R.drawable.mirror;
+                break;
+            case R.id.cy:
+                h = getResources().getString(R.string.yy);
+                n1 = getResources().getString(R.string.yy1);
+                n2 = getResources().getString(R.string.yy2);
+                image1 = R.drawable.yakka_removebg_preview;
+                image2 = R.drawable.yadgar_removebg_preview;
+                break;
+            case R.id.by:
+                h = getResources().getString(R.string.yy);
+                n1 = getResources().getString(R.string.yy1);
+                n2 = getResources().getString(R.string.yy2);
+                image1 = R.drawable.yakka_removebg_preview;
+                image2 = R.drawable.yadgar_removebg_preview;
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: "+harfId);
 
         }
         harf.setText(h);    //set harf
