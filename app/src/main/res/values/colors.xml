@@ -11,4 +11,11 @@
 
     <color name="blue_900">#202A44</color>
 
+    <color name="sky">#29B6F6</color>
+    <color name="red">#D50000</color>
+    <color name="green">#16AA1C</color>
+    <color name="purple">#6200EA</color>
+    <color name="yellow">#FFBF00</color>
+    <color name="orange">#FB5521</color>
+
 </resources>
