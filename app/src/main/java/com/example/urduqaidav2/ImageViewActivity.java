@@ -271,7 +271,7 @@ public class ImageViewActivity extends AppCompatActivity {
                 n1 = getResources().getString(R.string.m1);
                 n2 = getResources().getString(R.string.m2);
                 image1 = R.drawable.orange;
-                image2 = R.drawable.fish;
+                image2 = R.drawable.fish2;
                 break;
             case R.id.noon:
                 h = getResources().getString(R.string.n);
