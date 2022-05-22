@@ -3,6 +3,7 @@ package com.example.urduqaidav2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -74,7 +75,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intentShare);
                 break;
             default:
-                String harfClicked=view.
+                Button btnHarf=(Button)view;
+                String harfText=btnHarf.getText().toString();   //got text of btn
+                Intent intentPage=new Intent(this,ImageViewActivity.class); //go to next activity
+                intentPage.putExtra("harfText",harfText);
+                int color=((ColorDrawable)btnHarf.getBackground()).getColor(); //get background color of btn
+                intentPage.putExtra("harfColor",String.format("#%06X",(0xFFFFFF) & color));
+                startActivity(intentPage);
         }
     }
 }
