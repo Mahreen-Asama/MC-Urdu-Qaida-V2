@@ -7,7 +7,7 @@
     tools:context=".ImageViewActivity">
 
     <Button
-        android:id="@+id/btn_share_main"
+        android:id="@+id/btn_share_page"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="43dp"
@@ -18,13 +18,13 @@
         android:foregroundTint="#000000"
         android:paddingStart="16dp"
         android:textColorLink="#FBF8F8"
-        app:layout_constraintStart_toEndOf="@+id/btn_back_main"
+        app:layout_constraintStart_toEndOf="@+id/btn_back_page"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#FDF7F7"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/btn_back_main"
+        android:id="@+id/btn_back_page"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="35dp"

@@ -10,7 +10,7 @@
     tools:layout_editor_absoluteY="105dp">
 
     <Button
-        android:id="@+id/btn_share_main"
+        android:id="@+id/btn_share_page"
         android:layout_width="63dp"
         android:layout_height="75dp"
         android:background="#00000000"
@@ -27,7 +27,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/btn_back_main"
+        android:id="@+id/btn_back_page"
         android:layout_width="63dp"
         android:layout_height="75dp"
         android:background="#00000000"
@@ -52,7 +52,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cy"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_back_main"
+        app:layout_constraintStart_toEndOf="@+id/btn_back_page"
         app:layout_constraintTop_toBottomOf="@+id/kaf"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
@@ -81,7 +81,7 @@
         android:text="@string/gf"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@id/btn_back_main"
+        app:layout_constraintBottom_toTopOf="@id/btn_back_page"
         app:layout_constraintEnd_toStartOf="@+id/kaf"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -338,7 +338,7 @@
         android:textSize="34sp"
         app:cornerRadius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_share_main"
+        app:layout_constraintEnd_toStartOf="@+id/btn_share_page"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/meem"
         app:layout_constraintTop_toBottomOf="@+id/suad"
@@ -417,7 +417,7 @@
         android:text="@string/su"
         android:textSize="34sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_share_main"
+        app:layout_constraintBottom_toTopOf="@+id/btn_share_page"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/zuad"

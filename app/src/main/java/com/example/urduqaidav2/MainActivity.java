@@ -52,11 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         haroof[32]=findViewById(R.id.noon);
         haroof[33]=findViewById(R.id.wao);
         haroof[34]=findViewById(R.id.h);
-        haroof[35]=findViewById(R.id.btn_share_main);
+        haroof[35]=findViewById(R.id.btn_share_page);
         haroof[36]=findViewById(R.id.hm);
         haroof[37]=findViewById(R.id.cy);
         haroof[38]=findViewById(R.id.by);
-        haroof[39]=findViewById(R.id.btn_back_main);
+        haroof[39]=findViewById(R.id.btn_back_page);
 
         for(int i=0; i<40; i++){
             haroof[i].setOnClickListener(this);
@@ -66,22 +66,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view){
         switch (view.getId()){
-            case R.id.btn_back_main:
+            case R.id.btn_back_page:
                 Intent intentBack=new Intent(this,ChoiceActivity.class); //explicit intent
                 startActivity(intentBack);
                 break;
-            case R.id.btn_share_main:
+            case R.id.btn_share_page:
                 Intent intentShare=new Intent(Intent.ACTION_SEND); //implicit intent
                 startActivity(intentShare);
                 break;
             default:
                 Button btnHarf=(Button)view;
+
                 String harfText=btnHarf.getText().toString();   //got text of btn
-                Intent intentPage=new Intent(this,ImageViewActivity.class); //go to next activity
-                intentPage.putExtra("harfText",harfText);
                 int color=((ColorDrawable)btnHarf.getBackground()).getColor(); //get background color of btn
-                intentPage.putExtra("harfColor",String.format("#%06X",(0xFFFFFF) & color));
+
+                Intent intentPage=new Intent(this,ImageViewActivity.class); //go to next activity
+
+                //intentPage.putExtra("harfText",harfText);   //put data
+                //intentPage.putExtra("harfColor",String.format("#%06X",(0xFFFFFF) & color));
+
+                intentPage.putExtra("harfId", btnHarf.getId());   //put data
+                intentPage.putExtra("harfColor", color);
+
                 startActivity(intentPage);
+                break;
         }
     }
 }
