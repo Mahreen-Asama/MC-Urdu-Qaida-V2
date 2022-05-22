@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,7 +29,21 @@ public class ImageViewActivity extends AppCompatActivity {
         next=findViewById(R.id.btn_next);
         prev=findViewById(R.id.btn_prev);
         share=findViewById(R.id.btn_share_page);
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Intent.ACTION_SEND);
+                startActivity(intent);
+            }
+        });
         back=findViewById(R.id.btn_back_page);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ImageViewActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Intent intent=getIntent();
         int harfId=intent.getIntExtra("harfId", -1);  //get harf

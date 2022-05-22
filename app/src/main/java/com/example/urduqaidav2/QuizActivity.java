@@ -3,6 +3,7 @@ package com.example.urduqaidav2;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +27,21 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_quiz);
 
         back=findViewById(R.id.btn_back_quiz);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(QuizActivity.this,ChoiceActivity.class);
+                startActivity(intent);
+            }
+        });
         share=findViewById(R.id.btn_share_quiz);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Intent.ACTION_SEND);
+                startActivity(intent);
+            }
+        });
         sentence=findViewById(R.id.choice_sentence);
         imgQuiz=findViewById(R.id.img_quiz);
         a=findViewById(R.id.option_a);

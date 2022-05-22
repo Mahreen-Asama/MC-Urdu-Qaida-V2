@@ -7,7 +7,7 @@
     tools:context=".ChoiceActivity">
 
     <Button
-        android:id="@+id/btn_share_mp3"
+        android:id="@+id/btn_share_choice"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="60dp"
@@ -55,4 +55,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_quiz"
         tools:srcCompat="@drawable/capture" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
