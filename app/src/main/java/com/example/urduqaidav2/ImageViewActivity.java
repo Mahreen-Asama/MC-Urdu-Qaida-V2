@@ -133,105 +133,104 @@ public class ImageViewActivity extends AppCompatActivity {
                 image1 = R.drawable.tree;
                 image2 = R.drawable.ink;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.ddal:
+                h = getResources().getString(R.string.dd);
+                n1 = getResources().getString(R.string.dd1);
+                n2 = getResources().getString(R.string.dd2);
+                image1 = R.drawable.doctr;
+                image2 = R.drawable.dd2;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.zal:
+                h = getResources().getString(R.string.zl);
+                n1 = getResources().getString(R.string.zl1);
+                n2 = getResources().getString(R.string.zl2);
+                image1 = R.drawable.zkh_removebg_preview;
+                image2 = R.drawable.gold;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.ry:
+                h = getResources().getString(R.string.r);
+                n1 = getResources().getString(R.string.r1);
+                n2 = getResources().getString(R.string.r2);
+                image1 = R.drawable.bear;
+                image2 = R.drawable.rick;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.arry:
+                h = getResources().getString(R.string.rr);
+                n1 = getResources().getString(R.string.rr1);
+                n2 = getResources().getString(R.string.rr2);
+                image1 = R.drawable.doll;
+                image2 = R.drawable.eraser;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.zy:
+                h = getResources().getString(R.string.z);
+                n1 = getResources().getString(R.string.z1);
+                n2 = getResources().getString(R.string.z2);
+                image1 = R.drawable.giragge;
+                image2 = R.drawable.jewlery;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.yay:
+                h = getResources().getString(R.string.y);
+                n1 = getResources().getString(R.string.y1);
+                n2 = getResources().getString(R.string.y2);
+                image1 = R.drawable.yay_removebg_preview;
+                image2 = R.drawable.tv;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.seen:
+                h = getResources().getString(R.string.s);
+                n1 = getResources().getString(R.string.s1);
+                n2 = getResources().getString(R.string.s2);
+                image1 = R.drawable.apple;
+                image2 = R.drawable.cycle;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.sheen:
+                h = getResources().getString(R.string.ss);
+                n1 = getResources().getString(R.string.ss1);
+                n2 = getResources().getString(R.string.ss2);
+                image1 = R.drawable.lion;
+                image2 = R.drawable.turnip;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.suad:
+                h = getResources().getString(R.string.su);
+                n1 = getResources().getString(R.string.su1);
+                n2 = getResources().getString(R.string.su2);
+                image1 = R.drawable.sofa;
+                image2 = R.drawable.soap;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.zuad:
+                h = getResources().getString(R.string.zu);
+                n1 = getResources().getString(R.string.zu1);
+                n2 = getResources().getString(R.string.zu2);
+                image1 = R.drawable.zaeef;
+                image2 = R.drawable.zarb;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.toy:
+                h = getResources().getString(R.string.to);
+                n1 = getResources().getString(R.string.to1);
+                n2 = getResources().getString(R.string.to2);
+                image1 = R.drawable.tota;
+                image2 = R.drawable.drum;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.zoy:
+                h = getResources().getString(R.string.zu);
+                n1 = getResources().getString(R.string.zu1);
+                n2 = getResources().getString(R.string.zu2);
+                image1 = R.drawable.joker;
+                image2 = R.drawable.brtn;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.aien:
+                h = getResources().getString(R.string.an);
+                n1 = getResources().getString(R.string.an1);
+                n2 = getResources().getString(R.string.an2);
+                image1 = R.drawable.eagle;
+                image2 = R.drawable.glasses;
                 break;
-            case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+            case R.id.gain:
+                h = getResources().getString(R.string.gn);
+                n1 = getResources().getString(R.string.gn1);
+                n2 = getResources().getString(R.string.gn2);
+                image1 = R.drawable.balooen;
+                image2 = R.drawable.bathroom;
                 break;
-
 
         }
         harf.setText(h);    //set harf
