@@ -15,7 +15,7 @@ public class ImageViewActivity extends AppCompatActivity {
     TextView harf,object1,object2;
     ImageView img1,img2;
     Button next,prev,share,back;
-
+    int harfId=-1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +46,7 @@ public class ImageViewActivity extends AppCompatActivity {
         });
 
         Intent intent=getIntent();
-        int harfId=intent.getIntExtra("harfId", -1);  //get harf
+        harfId=intent.getIntExtra("harfId", -1);  //get harf
         //int harfColor=intent.getIntExtra("harfColor", -1);    //get color
 
 
@@ -56,288 +56,680 @@ public class ImageViewActivity extends AppCompatActivity {
 
         SetResources(harfId);   //set all resources
 
+        //---------------previous btn----------
+        prev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GoToPreviousPage(harfId);
+            }
+        });
+        //---------------next btn----------
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GoToNextPage(harfId);
+            }
+        });
     }
-    void SetResources(int harfId){
-        String h="",n1="",n2="";
-        int image1 = -1,image2 = -1;
+    void setCyBy(){
+        //choti y, bari y
+        harf.setText(getResources().getString(R.string.yy));    //set harf
+        object1.setText(getResources().getString(R.string.yy1));
+        object2.setText(getResources().getString(R.string.yy2));
+        img1.setImageResource(R.drawable.yakka_removebg_preview);
+        img2.setImageResource(R.drawable.yadgar_removebg_preview);
+        harfId=R.id.cy;
+    }
+    void setAlif(){
+        harf.setText(getResources().getString(R.string.a));    //set harf
+        object1.setText(getResources().getString(R.string.a1));
+        object2.setText(getResources().getString(R.string.a2));
+        img1.setImageResource(R.drawable.anar);
+        img2.setImageResource(R.drawable.angoor);
+        harfId=R.id.alif;
+    }
+    void setAlifMad(){
+        harf.setText(getResources().getString(R.string.aa));    //set harf
+        object1.setText(getResources().getString(R.string.aa1));
+        object2.setText(getResources().getString(R.string.aa2));
+        img1.setImageResource(R.drawable.aam);
+        img2.setImageResource(R.drawable.aankh);
+        harfId=R.id.alifmad;
+    }
+    void setBay(){
+        harf.setText(getResources().getString(R.string.b));    //set harf
+        object1.setText(getResources().getString(R.string.b1));
+        object2.setText(getResources().getString(R.string.b2));
+        img1.setImageResource(R.drawable.cat1);
+        img2.setImageResource(R.drawable.basta);
+        harfId=R.id.bay;
+    }
+    void setPay(){
+        harf.setText(getResources().getString(R.string.p));    //set harf
+        object1.setText(getResources().getString(R.string.p1));
+        object2.setText(getResources().getString(R.string.p2));
+        img1.setImageResource(R.drawable.patang);
+        img2.setImageResource(R.drawable.pankha);
+        harfId=R.id.pay;
+    }
+    void setTy(){
+        harf.setText(getResources().getString(R.string.t));    //set harf
+        object1.setText(getResources().getString(R.string.t1));
+        object2.setText(getResources().getString(R.string.t2));
+        img1.setImageResource(R.drawable.titli);
+        img2.setImageResource(R.drawable.tarbooz);
+        harfId=R.id.ty;
+    }
+    void setTay(){
+        harf.setText(getResources().getString(R.string.ta));    //set harf
+        object1.setText(getResources().getString(R.string.ta1));
+        object2.setText(getResources().getString(R.string.ta2));
+        img1.setImageResource(R.drawable.tomato);
+        img2.setImageResource(R.drawable.topi);
+        harfId=R.id.tay;
+    }
+    void setSay(){
+        harf.setText(getResources().getString(R.string.ss));    //set harf
+        object1.setText(getResources().getString(R.string.ss1));
+        object2.setText(getResources().getString(R.string.ss2));
+        img1.setImageResource(R.drawable.samar);
+        img2.setImageResource(R.drawable.sabit);
+        harfId=R.id.say;
+    }
+    void setJeem(){
+        harf.setText(getResources().getString(R.string.g));    //set harf
+        object1.setText(getResources().getString(R.string.g1));
+        object2.setText(getResources().getString(R.string.g2));
+        img1.setImageResource(R.drawable.jahaz);
+        img2.setImageResource(R.drawable.jug);
+        harfId=R.id.jeem;
+    }
+    void setChay(){
+        harf.setText(getResources().getString(R.string.ch));    //set harf
+        object1.setText(getResources().getString(R.string.ch1));
+        object2.setText(getResources().getString(R.string.ch2));
+        img1.setImageResource(R.drawable.sparrow);
+        img2.setImageResource(R.drawable.chaku);
+        harfId=R.id.chy;
+    }
+    void setHy(){
+        harf.setText(getResources().getString(R.string.H));    //set harf
+        object1.setText(getResources().getString(R.string.H1));
+        object2.setText(getResources().getString(R.string.H2));
+        img1.setImageResource(R.drawable.pool);
+        img2.setImageResource(R.drawable.halwai);
+        harfId=R.id.hy;
+    }
+    void setKh(){
+        harf.setText(getResources().getString(R.string.kh));    //set harf
+        object1.setText(getResources().getString(R.string.kh1));
+        object2.setText(getResources().getString(R.string.kh2));
+        img1.setImageResource(R.drawable.apricot);
+        img2.setImageResource(R.drawable.rabbit);
+        harfId=R.id.kh;
+    }
+    void setDal(){
+        harf.setText(getResources().getString(R.string.d));    //set harf
+        object1.setText(getResources().getString(R.string.d1));
+        object2.setText(getResources().getString(R.string.d2));
+        img1.setImageResource(R.drawable.tree);
+        img2.setImageResource(R.drawable.ink);
+        harfId=R.id.dal;
+    }
+    void setDdal(){
+        harf.setText(getResources().getString(R.string.dd));    //set harf
+        object1.setText(getResources().getString(R.string.dd1));
+        object2.setText(getResources().getString(R.string.dd2));
+        img1.setImageResource(R.drawable.doctr);
+        img2.setImageResource(R.drawable.dd2);
+        harfId=R.id.ddal;
+    }
+    void setZal(){
+        harf.setText(getResources().getString(R.string.zl));    //set harf
+        object1.setText(getResources().getString(R.string.zl1));
+        object2.setText(getResources().getString(R.string.zl2));
+        img1.setImageResource(R.drawable.zkh_removebg_preview);
+        img2.setImageResource(R.drawable.gold);
+        harfId=R.id.zal;
+    }
+    void setRy(){
+        harf.setText(getResources().getString(R.string.r));    //set harf
+        object1.setText(getResources().getString(R.string.r1));
+        object2.setText(getResources().getString(R.string.r2));
+        img1.setImageResource(R.drawable.bear);
+        img2.setImageResource(R.drawable.rick);
+        harfId=R.id.ry;
+    }
+    void setArry(){
+        harf.setText(getResources().getString(R.string.rr));    //set harf
+        object1.setText(getResources().getString(R.string.rr1));
+        object2.setText(getResources().getString(R.string.rr2));
+        img1.setImageResource(R.drawable.doll);
+        img2.setImageResource(R.drawable.eraser);
+        harfId=R.id.arry;
+    }
+    void setZy(){
+        harf.setText(getResources().getString(R.string.z));    //set harf
+        object1.setText(getResources().getString(R.string.z1));
+        object2.setText(getResources().getString(R.string.z2));
+        img1.setImageResource(R.drawable.giragge);
+        img2.setImageResource(R.drawable.jewlery);
+        harfId=R.id.zy;
+    }
+    void setYay(){
+        harf.setText(getResources().getString(R.string.y));    //set harf
+        object1.setText(getResources().getString(R.string.y1));
+        object2.setText(getResources().getString(R.string.y2));
+        img1.setImageResource(R.drawable.yay_removebg_preview);
+        img2.setImageResource(R.drawable.snake1);
+        harfId=R.id.yay;
+    }
+    void setSeen(){
+        harf.setText(getResources().getString(R.string.s));    //set harf
+        object1.setText(getResources().getString(R.string.s1));
+        object2.setText(getResources().getString(R.string.s2));
+        img1.setImageResource(R.drawable.apple);
+        img2.setImageResource(R.drawable.cycle);
+        harfId=R.id.seen;
+    }
+    void setSheen(){
+        harf.setText(getResources().getString(R.string.sh));    //set harf
+        object1.setText(getResources().getString(R.string.sh1));
+        object2.setText(getResources().getString(R.string.sh2));
+        img1.setImageResource(R.drawable.lion);
+        img2.setImageResource(R.drawable.turnip);
+        harfId=R.id.sheen;
+    }
+    void setSuad(){
+        harf.setText(getResources().getString(R.string.su));    //set harf
+        object1.setText(getResources().getString(R.string.su1));
+        object2.setText(getResources().getString(R.string.su2));
+        img1.setImageResource(R.drawable.sofa);
+        img2.setImageResource(R.drawable.soap);
+        harfId=R.id.suad;
+    }
+    void setZuad(){
+        harf.setText(getResources().getString(R.string.zu));    //set harf
+        object1.setText(getResources().getString(R.string.zu1));
+        object2.setText(getResources().getString(R.string.zu2));
+        img1.setImageResource(R.drawable.zaeef);
+        img2.setImageResource(R.drawable.zarb);
+        harfId=R.id.zuad;
+    }
+    void setToy(){
+        harf.setText(getResources().getString(R.string.to));    //set harf
+        object1.setText(getResources().getString(R.string.to1));
+        object2.setText(getResources().getString(R.string.to2));
+        img1.setImageResource(R.drawable.tota);
+        img2.setImageResource(R.drawable.drum);
+        harfId=R.id.toy;
+    }
+    void setZoy(){
+        harf.setText(getResources().getString(R.string.zo));    //set harf
+        object1.setText(getResources().getString(R.string.zo1));
+        object2.setText(getResources().getString(R.string.zo2));
+        img1.setImageResource(R.drawable.joker);
+        img2.setImageResource(R.drawable.brtn);
+        harfId=R.id.zoy;
+    }
+    void setAien(){
+        harf.setText(getResources().getString(R.string.an));    //set harf
+        object1.setText(getResources().getString(R.string.an1));
+        object2.setText(getResources().getString(R.string.an2));
+        img1.setImageResource(R.drawable.eagle);
+        img2.setImageResource(R.drawable.glasses);
+        harfId=R.id.aien;
+    }
+    void setGain(){
+        harf.setText(getResources().getString(R.string.gn));    //set harf
+        object1.setText(getResources().getString(R.string.gn1));
+        object2.setText(getResources().getString(R.string.gn2));
+        img1.setImageResource(R.drawable.balooen);
+        img2.setImageResource(R.drawable.kaleen);
+        harfId=R.id.gain;
+    }
+    void setFay(){
+        harf.setText(getResources().getString(R.string.f));    //set harf
+        object1.setText(getResources().getString(R.string.f1));
+        object2.setText(getResources().getString(R.string.f2));
+        img1.setImageResource(R.drawable.dove);
+        img2.setImageResource(R.drawable.frock);
+        harfId=R.id.fy;
+    }
+    void setQaf(){
+        harf.setText(getResources().getString(R.string.q));    //set harf
+        object1.setText(getResources().getString(R.string.q1));
+        object2.setText(getResources().getString(R.string.q2));
+        img1.setImageResource(R.drawable.shirt);
+        img2.setImageResource(R.drawable.pen);
+        harfId=R.id.qaf;
+    }
+    void setKaf(){
+        harf.setText(getResources().getString(R.string.k));    //set harf
+        object1.setText(getResources().getString(R.string.k1));
+        object2.setText(getResources().getString(R.string.k2));
+        img1.setImageResource(R.drawable.chair);
+        img2.setImageResource(R.drawable.pc_removebg_preview);
+        harfId=R.id.kaf;
+    }
+    void setGaf(){
+        harf.setText(getResources().getString(R.string.gf));    //set harf
+        object1.setText(getResources().getString(R.string.gf1));
+        object2.setText(getResources().getString(R.string.gf2));
+        img1.setImageResource(R.drawable.gajar);
+        img2.setImageResource(R.drawable.gul);
+        harfId=R.id.gaf;
+    }
+    void setLaam(){
+        harf.setText(getResources().getString(R.string.l));    //set harf
+        object1.setText(getResources().getString(R.string.l1));
+        object2.setText(getResources().getString(R.string.l2));
+        img1.setImageResource(R.drawable.lomri);
+        img2.setImageResource(R.drawable.lemon);
+        harfId=R.id.lam;
+    }
+    void setMeem(){
+        harf.setText(getResources().getString(R.string.m));    //set harf
+        object1.setText(getResources().getString(R.string.m1));
+        object2.setText(getResources().getString(R.string.m2));
+        img1.setImageResource(R.drawable.orange);
+        img2.setImageResource(R.drawable.fish2);
+        harfId=R.id.meem;
+    }
+    void setNoon(){
+        harf.setText(getResources().getString(R.string.n));    //set harf
+        object1.setText(getResources().getString(R.string.n1));
+        object2.setText(getResources().getString(R.string.n2));
+        img1.setImageResource(R.drawable.coco);
+        img2.setImageResource(R.drawable.nalka);
+        harfId=R.id.noon;
+    }
+    void setWao(){
+        harf.setText(getResources().getString(R.string.w));    //set harf
+        object1.setText(getResources().getString(R.string.w1));
+        object2.setText(getResources().getString(R.string.w2));
+        img1.setImageResource(R.drawable.lawyer);
+        img2.setImageResource(R.drawable.wark);
+        harfId=R.id.wao;
+    }
+    void setH(){
+        harf.setText(getResources().getString(R.string.h));    //set harf
+        object1.setText(getResources().getString(R.string.h1));
+        object2.setText(getResources().getString(R.string.h2));
+        img1.setImageResource(R.drawable.hathi);
+        img2.setImageResource(R.drawable.hand);
+        harfId=R.id.h;
+    }
+    void setHm(){
+        harf.setText(getResources().getString(R.string.hm));    //set harf
+        object1.setText(getResources().getString(R.string.hm1));
+        object2.setText(getResources().getString(R.string.hm2));
+        img1.setImageResource(R.drawable.tea);
+        img2.setImageResource(R.drawable.mirror);
+        harfId=R.id.hm;
+    }
 
-        String s=getResources().getString(R.string.a);
-
+    void GoToNextPage(int harfId) {
         switch (harfId) {
             case R.id.alif:
-                h = getResources().getString(R.string.a);
-                n1 = getResources().getString(R.string.a1);
-                n2 = getResources().getString(R.string.a2);
-                image1 = R.drawable.anar;
-                image2 = R.drawable.angoor;
+                setAlifMad();
                 break;
             case R.id.alifmad:
-                h = getResources().getString(R.string.aa);
-                n1 = getResources().getString(R.string.aa1);
-                n2 = getResources().getString(R.string.aa2);
-                image1 = R.drawable.aam;
-                image2 = R.drawable.aankh;
+                setBay();
                 break;
             case R.id.bay:
-                h = getResources().getString(R.string.b);
-                n1 = getResources().getString(R.string.b1);
-                n2 = getResources().getString(R.string.b2);
-                image1 = R.drawable.billi;
-                image2 = R.drawable.basta;
+                setPay();
                 break;
             case R.id.pay:
-                h = getResources().getString(R.string.p);
-                n1 = getResources().getString(R.string.p1);
-                n2 = getResources().getString(R.string.p2);
-                image1 = R.drawable.patang;
-                image2 = R.drawable.pankha;
+                setTy();
                 break;
             case R.id.ty:
-                h = getResources().getString(R.string.t);
-                n1 = getResources().getString(R.string.t1);
-                n2 = getResources().getString(R.string.t2);
-                image1 = R.drawable.titli;
-                image2 = R.drawable.tarbooz;
+                setTay();
                 break;
             case R.id.tay:
-                h = getResources().getString(R.string.ta);
-                n1 = getResources().getString(R.string.ta1);
-                n2 = getResources().getString(R.string.ta2);
-                image1 = R.drawable.tomato;
-                image2 = R.drawable.topi;
+                setSay();
                 break;
             case R.id.say:
-                h = getResources().getString(R.string.ss);
-                n1 = getResources().getString(R.string.ss1);
-                n2 = getResources().getString(R.string.ss2);
-                image1 = R.drawable.samar;
-                image2 = R.drawable.sabit;
+                setJeem();
                 break;
             case R.id.jeem:
-                h = getResources().getString(R.string.g);
-                n1 = getResources().getString(R.string.g1);
-                n2 = getResources().getString(R.string.g2);
-                image1 = R.drawable.jahaz;
-                image2 = R.drawable.jug;
+                setChay();
                 break;
             case R.id.chy:
-                h = getResources().getString(R.string.ch);
-                n1 = getResources().getString(R.string.ch1);
-                n2 = getResources().getString(R.string.ch2);
-                image1 = R.drawable.sparrow;
-                image2 = R.drawable.chaku;
+                setHy();
                 break;
             case R.id.hy:
-                h = getResources().getString(R.string.H);
-                n1 = getResources().getString(R.string.H1);
-                n2 = getResources().getString(R.string.H2);
-                image1 = R.drawable.pool;
-                image2 = R.drawable.halwai;
+                setKh();
                 break;
             case R.id.kh:
-                h = getResources().getString(R.string.kh);
-                n1 = getResources().getString(R.string.kh1);
-                n2 = getResources().getString(R.string.kh2);
-                image1 = R.drawable.apricot;
-                image2 = R.drawable.rabbit;
+                setDal();
                 break;
             case R.id.dal:
-                h = getResources().getString(R.string.d);
-                n1 = getResources().getString(R.string.d1);
-                n2 = getResources().getString(R.string.d2);
-                image1 = R.drawable.tree;
-                image2 = R.drawable.ink;
+                setDdal();
                 break;
             case R.id.ddal:
-                h = getResources().getString(R.string.dd);
-                n1 = getResources().getString(R.string.dd1);
-                n2 = getResources().getString(R.string.dd2);
-                image1 = R.drawable.doctr;
-                image2 = R.drawable.dd2;
+                setZal();
                 break;
             case R.id.zal:
-                h = getResources().getString(R.string.zl);
-                n1 = getResources().getString(R.string.zl1);
-                n2 = getResources().getString(R.string.zl2);
-                image1 = R.drawable.zkh_removebg_preview;
-                image2 = R.drawable.gold;
+                setRy();
                 break;
             case R.id.ry:
-                h = getResources().getString(R.string.r);
-                n1 = getResources().getString(R.string.r1);
-                n2 = getResources().getString(R.string.r2);
-                image1 = R.drawable.bear;
-                image2 = R.drawable.rick;
+                setArry();
                 break;
             case R.id.arry:
-                h = getResources().getString(R.string.rr);
-                n1 = getResources().getString(R.string.rr1);
-                n2 = getResources().getString(R.string.rr2);
-                image1 = R.drawable.doll;
-                image2 = R.drawable.eraser;
+                setZy();
                 break;
             case R.id.zy:
-                h = getResources().getString(R.string.z);
-                n1 = getResources().getString(R.string.z1);
-                n2 = getResources().getString(R.string.z2);
-                image1 = R.drawable.giragge;
-                image2 = R.drawable.jewlery;
+                setYay();
                 break;
             case R.id.yay:
-                h = getResources().getString(R.string.y);
-                n1 = getResources().getString(R.string.y1);
-                n2 = getResources().getString(R.string.y2);
-                image1 = R.drawable.yay_removebg_preview;
-                image2 = R.drawable.snake1;
+                setSeen();
                 break;
             case R.id.seen:
-                h = getResources().getString(R.string.s);
-                n1 = getResources().getString(R.string.s1);
-                n2 = getResources().getString(R.string.s2);
-                image1 = R.drawable.apple;
-                image2 = R.drawable.cycle;
+                setSheen();
                 break;
             case R.id.sheen:
-                h = getResources().getString(R.string.sh);
-                n1 = getResources().getString(R.string.sh1);
-                n2 = getResources().getString(R.string.sh2);
-                image1 = R.drawable.lion;
-                image2 = R.drawable.turnip;
+                setSuad();
                 break;
             case R.id.suad:
-                h = getResources().getString(R.string.su);
-                n1 = getResources().getString(R.string.su1);
-                n2 = getResources().getString(R.string.su2);
-                image1 = R.drawable.sofa;
-                image2 = R.drawable.soap;
+                setZuad();
                 break;
             case R.id.zuad:
-                h = getResources().getString(R.string.zu);
-                n1 = getResources().getString(R.string.zu1);
-                n2 = getResources().getString(R.string.zu2);
-                image1 = R.drawable.zaeef;
-                image2 = R.drawable.zarb;
+                setToy();
                 break;
             case R.id.toy:
-                h = getResources().getString(R.string.to);
-                n1 = getResources().getString(R.string.to1);
-                n2 = getResources().getString(R.string.to2);
-                image1 = R.drawable.tota;
-                image2 = R.drawable.drum;
+                setZoy();
                 break;
             case R.id.zoy:
-                h = getResources().getString(R.string.zo);
-                n1 = getResources().getString(R.string.zo1);
-                n2 = getResources().getString(R.string.zo2);
-                image1 = R.drawable.joker;
-                image2 = R.drawable.brtn;
+                setAien();
                 break;
             case R.id.aien:
-                h = getResources().getString(R.string.an);
-                n1 = getResources().getString(R.string.an1);
-                n2 = getResources().getString(R.string.an2);
-                image1 = R.drawable.eagle;
-                image2 = R.drawable.glasses;
+                setGain();
                 break;
             case R.id.gain:
-                h = getResources().getString(R.string.gn);
-                n1 = getResources().getString(R.string.gn1);
-                n2 = getResources().getString(R.string.gn2);
-                image1 = R.drawable.balooen;
-                image2 = R.drawable.kaleen;
+                setFay();
                 break;
             case R.id.fy:
-                h = getResources().getString(R.string.f);
-                n1 = getResources().getString(R.string.f1);
-                n2 = getResources().getString(R.string.f2);
-                image1 = R.drawable.dove;
-                image2 = R.drawable.frock;
+                setQaf();
                 break;
             case R.id.qaf:
-                h = getResources().getString(R.string.q);
-                n1 = getResources().getString(R.string.q1);
-                n2 = getResources().getString(R.string.q2);
-                image1 = R.drawable.shirt;
-                image2 = R.drawable.pen;
+                setKaf();
                 break;
             case R.id.kaf:
-                h = getResources().getString(R.string.k);
-                n1 = getResources().getString(R.string.k1);
-                n2 = getResources().getString(R.string.k2);
-                image1 = R.drawable.chair;
-                image2 = R.drawable.pc_removebg_preview;
+                setGaf();
                 break;
             case R.id.gaf:
-                h = getResources().getString(R.string.gf);
-                n1 = getResources().getString(R.string.gf1);
-                n2 = getResources().getString(R.string.gf2);
-                image1 = R.drawable.gajar;
-                image2 = R.drawable.gul;
+                setLaam();
                 break;
             case R.id.lam:
-                h = getResources().getString(R.string.l);
-                n1 = getResources().getString(R.string.l1);
-                n2 = getResources().getString(R.string.l2);
-                image1 = R.drawable.lomri;
-                image2 = R.drawable.lemon;
+                setMeem();
                 break;
             case R.id.meem:
-                h = getResources().getString(R.string.m);
-                n1 = getResources().getString(R.string.m1);
-                n2 = getResources().getString(R.string.m2);
-                image1 = R.drawable.orange;
-                image2 = R.drawable.fish2;
+                setNoon();
                 break;
             case R.id.noon:
-                h = getResources().getString(R.string.n);
-                n1 = getResources().getString(R.string.n1);
-                n2 = getResources().getString(R.string.n2);
-                image1 = R.drawable.coco;
-                image2 = R.drawable.nalka;
+                setWao();
                 break;
             case R.id.wao:
-                h = getResources().getString(R.string.w);
-                n1 = getResources().getString(R.string.w1);
-                n2 = getResources().getString(R.string.w2);
-                image1 = R.drawable.lawyer;
-                image2 = R.drawable.wark;
+                setH();
                 break;
             case R.id.h:
-                h = getResources().getString(R.string.h);
-                n1 = getResources().getString(R.string.h1);
-                n2 = getResources().getString(R.string.h2);
-                image1 = R.drawable.hathi;
-                image2 = R.drawable.hand;
+                setHm();
                 break;
             case R.id.hm:
-                h = getResources().getString(R.string.hm);
-                n1 = getResources().getString(R.string.hm1);
-                n2 = getResources().getString(R.string.hm2);
-                image1 = R.drawable.tea;
-                image2 = R.drawable.mirror;
+                setCyBy();
                 break;
             case R.id.cy:
-                h = getResources().getString(R.string.yy);
-                n1 = getResources().getString(R.string.yy1);
-                n2 = getResources().getString(R.string.yy2);
-                image1 = R.drawable.yakka_removebg_preview;
-                image2 = R.drawable.yadgar_removebg_preview;
+                setAlif();
                 break;
             case R.id.by:
-                h = getResources().getString(R.string.yy);
-                n1 = getResources().getString(R.string.yy1);
-                n2 = getResources().getString(R.string.yy2);
-                image1 = R.drawable.yakka_removebg_preview;
-                image2 = R.drawable.yadgar_removebg_preview;
+                setAlif();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + harfId);
+        }
+    }
+    void GoToPreviousPage(int harfId) {
+        switch (harfId) {
+            case R.id.alif:
+                setCyBy();
+                break;
+            case R.id.alifmad:
+                setAlif();
+                break;
+            case R.id.bay:
+                setAlifMad();
+                break;
+            case R.id.pay:
+                setBay();
+                break;
+            case R.id.ty:
+                setPay();
+                break;
+            case R.id.tay:
+                setTy();
+                break;
+            case R.id.say:
+                setTay();
+                break;
+            case R.id.jeem:
+                setSay();
+                break;
+            case R.id.chy:
+                setJeem();
+                break;
+            case R.id.hy:
+                setChay();
+                break;
+            case R.id.kh:
+                setHy();
+                break;
+            case R.id.dal:
+                setKh();
+                break;
+            case R.id.ddal:
+                setDal();
+                break;
+            case R.id.zal:
+                setDdal();
+                break;
+            case R.id.ry:
+                setZal();
+                break;
+            case R.id.arry:
+                setRy();
+                break;
+            case R.id.zy:
+                setArry();
+                break;
+            case R.id.yay:
+                setZy();
+                break;
+            case R.id.seen:
+                setYay();
+                break;
+            case R.id.sheen:
+                setSeen();
+                break;
+            case R.id.suad:
+                setSheen();
+                break;
+            case R.id.zuad:
+                setSuad();
+                break;
+            case R.id.toy:
+                setZuad();
+                break;
+            case R.id.zoy:
+                setToy();
+                break;
+            case R.id.aien:
+                setZoy();
+                break;
+            case R.id.gain:
+                setAien();
+                break;
+            case R.id.fy:
+                setGain();
+                break;
+            case R.id.qaf:
+                setFay();
+                break;
+            case R.id.kaf:
+                setQaf();
+                break;
+            case R.id.gaf:
+                setKaf();
+                break;
+            case R.id.lam:
+                setGaf();
+                break;
+            case R.id.meem:
+                setLaam();
+                break;
+            case R.id.noon:
+                setMeem();
+                break;
+            case R.id.wao:
+                setNoon();
+                break;
+            case R.id.h:
+                setWao();
+                break;
+            case R.id.hm:
+                setH();
+                break;
+            case R.id.cy:
+                setHm();
+                break;
+            case R.id.by:
+                setHm();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + harfId);
+        }
+    }
+    void SetResources(int harfId){
+        /*String h="",n1="",n2="";
+        int image1 = -1,image2 = -1;*/
+        switch (harfId) {
+            case R.id.alif:
+                setAlif();
+                break;
+            case R.id.alifmad:
+               setAlifMad();
+                break;
+            case R.id.bay:
+                setBay();
+                break;
+            case R.id.pay:
+                setPay();
+                break;
+            case R.id.ty:
+                setTy();
+                break;
+            case R.id.tay:
+               setTay();
+                break;
+            case R.id.say:
+                setSay();
+                break;
+            case R.id.jeem:
+                setJeem();
+                break;
+            case R.id.chy:
+                setChay();
+                break;
+            case R.id.hy:
+                setHy();
+                break;
+            case R.id.kh:
+                setKh();
+                break;
+            case R.id.dal:
+                setDal();
+                break;
+            case R.id.ddal:
+                setDdal();
+                break;
+            case R.id.zal:
+                setZal();
+                break;
+            case R.id.ry:
+                setRy();
+                break;
+            case R.id.arry:
+                setArry();
+                break;
+            case R.id.zy:
+                setZy();
+                break;
+            case R.id.yay:
+                setYay();
+                break;
+            case R.id.seen:
+                setSeen();
+                break;
+            case R.id.sheen:
+                setSheen();
+                break;
+            case R.id.suad:
+                setSuad();
+                break;
+            case R.id.zuad:
+                setZuad();
+                break;
+            case R.id.toy:
+                setToy();
+                break;
+            case R.id.zoy:
+                setZoy();
+                break;
+            case R.id.aien:
+                setAien();
+                break;
+            case R.id.gain:
+                setGain();
+                break;
+            case R.id.fy:
+                setFay();
+                break;
+            case R.id.qaf:
+                setQaf();
+                break;
+            case R.id.kaf:
+                setKaf();
+                break;
+            case R.id.gaf:
+                setGaf();
+                break;
+            case R.id.lam:
+                setLaam();
+                break;
+            case R.id.meem:
+                setMeem();
+                break;
+            case R.id.noon:
+                setNoon();
+                break;
+            case R.id.wao:
+                setWao();
+                break;
+            case R.id.h:
+                setH();
+                break;
+            case R.id.hm:
+                setHm();
+                break;
+            case R.id.cy:
+                setCyBy();
+                break;
+            case R.id.by:
+                setCyBy();
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: "+harfId);
 
         }
-        harf.setText(h);    //set harf
-        object1.setText(n1);
-        object2.setText(n2);
-        img1.setImageResource(image1);
-        img2.setImageResource(image2);
     }
 }

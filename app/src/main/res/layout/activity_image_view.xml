@@ -27,8 +27,8 @@
         android:layout_marginBottom="100dp"
         android:fontFamily="monospace"
         android:text="@string/a1"
-        android:textColor="#FF1493"
-        android:textSize="60sp"
+        android:textColor="@color/black"
+        android:textSize="55sp"
         app:layout_constraintBottom_toTopOf="@+id/object2"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -39,7 +39,7 @@
         android:layout_marginEnd="52dp"
         android:fontFamily="monospace"
         android:text="@string/a"
-        android:textColor="#FF1493"
+        android:textColor="@color/black"
         android:textSize="160sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -52,8 +52,8 @@
         android:layout_marginBottom="65dp"
         android:fontFamily="monospace"
         android:text="@string/a2"
-        android:textColor="#FF1493"
-        android:textSize="60sp"
+        android:textColor="@color/black"
+        android:textSize="55sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_prev"
         app:layout_constraintEnd_toEndOf="parent" />
 

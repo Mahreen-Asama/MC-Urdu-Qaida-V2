@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back33"
     tools:context=".ChoiceActivity">
 
     <Button
@@ -41,19 +42,20 @@
         android:text="ٹیسٹ دیں"
         android:textSize="60sp"
         app:cornerRadius="500dp"
-        app:layout_constraintBottom_toTopOf="@+id/img_repository"
+        app:layout_constraintBottom_toTopOf="@+id/btn_repo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_learn" />
 
-    <ImageView
-        android:id="@+id/img_repository"
+    <Button
+        android:id="@+id/btn_repo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/capture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_quiz"
-        tools:srcCompat="@drawable/capture" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

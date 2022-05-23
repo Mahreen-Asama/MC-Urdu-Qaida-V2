@@ -11,8 +11,7 @@ import android.widget.ImageView;
 
 public class ChoiceActivity extends AppCompatActivity {
 
-    Button learn,test,share;
-    ImageView repo;
+    Button learn,test,share,repo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +42,7 @@ public class ChoiceActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        repo = findViewById(R.id.img_repository);
+        repo = findViewById(R.id.btn_repo);
         repo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
