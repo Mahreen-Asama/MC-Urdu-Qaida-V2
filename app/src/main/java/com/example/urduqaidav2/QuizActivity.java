@@ -49,8 +49,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         c=findViewById(R.id.option_c);
         d=findViewById(R.id.option_d);
 
-        back.setOnClickListener(this);
-        share.setOnClickListener(this);
         a.setOnClickListener(this);
         b.setOnClickListener(this);
         c.setOnClickListener(this);
@@ -65,9 +63,9 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 imgquiz=R.drawable.zkh_removebg_preview;
                 break;
             case R.drawable.zkh_removebg_preview:
-                imgquiz=R.drawable.tv;
+                imgquiz=R.drawable.snake1;
                 break;
-            case R.drawable.tv:
+            case R.drawable.snake1:
                 imgquiz=R.drawable.brtn;
                 break;
             case R.drawable.brtn:
@@ -109,7 +107,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.option_b:
                 a.setText(getResources().getString(R.string.gn));
                 b.setText(getResources().getString(R.string.f));
-                c.setText(getResources().getString(R.string.y));    //for tv
+                c.setText(getResources().getString(R.string.y));    //for snake
                 d.setText(getResources().getString(R.string.s));
                 righAnswer=R.id.option_c;
                 break;
@@ -126,23 +124,20 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         AlertDialog dialog=builder.create();
-        switch (view.getId()){
-            case R.id.btn_back_quiz:
-                break;
-            case R.id.btn_share_quiz:
-                break;
-            default:
-                if(view.getId()==righAnswer){
-                    dialog.setTitle("درست جواب !");     //show dialog box
-                    dialog.show();
-                    //show next question
-                    showNewImage();
-                    showNewOptions();
-                }
-                else{
-                    dialog.setTitle("دوبارہ کوشش کریں !");
-                    dialog.show();
-                }
+
+        if(view.getId()==righAnswer){
+            dialog.setTitle("درست جواب !");     //show dialog box
+            dialog.show();
+            //show next question
+            showNewImage();
+            showNewOptions();
         }
+        else{
+            dialog.setTitle("دوبارہ کوشش کریں !");
+            dialog.show();
+        }
+
+
+
     }
 }
