@@ -16,6 +16,28 @@ public class ImageViewActivity extends AppCompatActivity {
     ImageView img1,img2;
     Button next,prev,share,back;
     int harfId=-1;
+    int img1Id=-1,img2Id=-1;
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("harfID",harfId);
+        /*savedInstanceState.putString("obj1",object1.getText().toString());
+        savedInstanceState.putString("obj2",object2.getText().toString());
+        savedInstanceState.putInt("img1",img1.getImageAlpha());
+        savedInstanceState.putInt("img2",img2.getImageAlpha());*/
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        int hid=savedInstanceState.getInt("harfID");
+        SetResources(hid);
+        /*harf.setText(savedInstanceState.getString("harff"));
+        object1.setText(savedInstanceState.getString("obj1"));
+        object2.setText(savedInstanceState.getString("obj2"));
+        img1.setImageResource(savedInstanceState.getInt("img1"));
+        img2.setImageResource(savedInstanceState.getInt("img2"));*/
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
