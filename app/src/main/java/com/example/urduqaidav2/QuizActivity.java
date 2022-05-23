@@ -35,13 +35,13 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
         share=findViewById(R.id.btn_share_quiz);
-        back.setOnClickListener(new View.OnClickListener() {
+        /*share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Intent.ACTION_SEND);
                 startActivity(intent);
             }
-        });
+        });*/
         sentence=findViewById(R.id.choice_sentence);
         imgQuiz=findViewById(R.id.img_quiz);
         a=findViewById(R.id.option_a);

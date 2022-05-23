@@ -20,13 +20,13 @@ public class ChoiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_choice);
 
         share = findViewById(R.id.btn_share_choice);
-        share.setOnClickListener(new View.OnClickListener() {
+        /*share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Intent.ACTION_SEND);
                 startActivity(intent);
             }
-        });
+        });*/
         learn = findViewById(R.id.btn_learn);
         learn.setOnClickListener(new View.OnClickListener() {
             @Override

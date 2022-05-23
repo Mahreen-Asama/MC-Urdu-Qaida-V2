@@ -29,13 +29,13 @@ public class ImageViewActivity extends AppCompatActivity {
         next=findViewById(R.id.btn_next);
         prev=findViewById(R.id.btn_prev);
         share=findViewById(R.id.btn_share_page);
-        share.setOnClickListener(new View.OnClickListener() {
+        /*share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Intent.ACTION_SEND);
                 startActivity(intent);
             }
-        });
+        });*/
         back=findViewById(R.id.btn_back_page);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,12 +47,12 @@ public class ImageViewActivity extends AppCompatActivity {
 
         Intent intent=getIntent();
         int harfId=intent.getIntExtra("harfId", -1);  //get harf
-        String harfColor=intent.getStringExtra("harfColor");    //get color
+        //int harfColor=intent.getIntExtra("harfColor", -1);    //get color
 
 
-        harf.setTextColor(Color.parseColor(harfColor));    //set harf color
-        object1.setTextColor(Color.parseColor(harfColor)); //set words color
-        object2.setTextColor(Color.parseColor(harfColor));
+        //harf.setTextColor(harfColor);    //set harf color
+        //object1.setTextColor(Color.parseColor(harfColor)); //set words color
+        //object2.setTextColor(Color.parseColor(harfColor));
 
         SetResources(harfId);   //set all resources
 
@@ -188,7 +188,7 @@ public class ImageViewActivity extends AppCompatActivity {
                 n1 = getResources().getString(R.string.y1);
                 n2 = getResources().getString(R.string.y2);
                 image1 = R.drawable.yay_removebg_preview;
-                image2 = R.drawable.tv;
+                image2 = R.drawable.snake1;
                 break;
             case R.id.seen:
                 h = getResources().getString(R.string.s);
@@ -198,9 +198,9 @@ public class ImageViewActivity extends AppCompatActivity {
                 image2 = R.drawable.cycle;
                 break;
             case R.id.sheen:
-                h = getResources().getString(R.string.ss);
-                n1 = getResources().getString(R.string.ss1);
-                n2 = getResources().getString(R.string.ss2);
+                h = getResources().getString(R.string.sh);
+                n1 = getResources().getString(R.string.sh1);
+                n2 = getResources().getString(R.string.sh2);
                 image1 = R.drawable.lion;
                 image2 = R.drawable.turnip;
                 break;
@@ -226,9 +226,9 @@ public class ImageViewActivity extends AppCompatActivity {
                 image2 = R.drawable.drum;
                 break;
             case R.id.zoy:
-                h = getResources().getString(R.string.zu);
-                n1 = getResources().getString(R.string.zu1);
-                n2 = getResources().getString(R.string.zu2);
+                h = getResources().getString(R.string.zo);
+                n1 = getResources().getString(R.string.zo1);
+                n2 = getResources().getString(R.string.zo2);
                 image1 = R.drawable.joker;
                 image2 = R.drawable.brtn;
                 break;
@@ -244,7 +244,7 @@ public class ImageViewActivity extends AppCompatActivity {
                 n1 = getResources().getString(R.string.gn1);
                 n2 = getResources().getString(R.string.gn2);
                 image1 = R.drawable.balooen;
-                image2 = R.drawable.bathroom;
+                image2 = R.drawable.kaleen;
                 break;
             case R.id.fy:
                 h = getResources().getString(R.string.f);

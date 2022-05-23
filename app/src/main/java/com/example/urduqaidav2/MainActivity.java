@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -71,14 +72,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intentBack);
                 break;
             case R.id.btn_share_page:
-                Intent intentShare=new Intent(Intent.ACTION_SEND); //implicit intent
-                startActivity(intentShare);
+                /*Intent intentShare=new Intent(Intent.ACTION_SEND); //implicit intent
+                startActivity(intentShare);*/
                 break;
             default:
                 Button btnHarf=(Button)view;
 
+
                 String harfText=btnHarf.getText().toString();   //got text of btn
-                int color=((ColorDrawable)btnHarf.getBackground()).getColor(); //get background color of btn
+                //int color=((ColorDrawable)view.getBackground()).getColor(); //get background color of btn
 
                 Intent intentPage=new Intent(this,ImageViewActivity.class); //go to next activity
 
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //intentPage.putExtra("harfColor",String.format("#%06X",(0xFFFFFF) & color));
 
                 intentPage.putExtra("harfId", btnHarf.getId());   //put data
-                intentPage.putExtra("harfColor", color);
+                //intentPage.putExtra("harfColor", color);
 
                 startActivity(intentPage);
                 break;
