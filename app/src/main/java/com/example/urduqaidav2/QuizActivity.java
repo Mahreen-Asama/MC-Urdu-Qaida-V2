@@ -3,6 +3,7 @@ package com.example.urduqaidav2;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,8 +17,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     TextView sentence;
     ImageView imgQuiz;
     Button a,b,c,d;
-    AlertDialog.Builder builder;
-    int imgquiz = R.drawable.anar;
+    //AlertDialog.Builder builder;
+    int imgquiz = R.drawable.joker;
     int righAnswer = R.id.option_a;   //first one
 
 
@@ -56,7 +57,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     }
     void showNewImage(){
         switch (imgquiz){
-            case R.drawable.anar:
+            case R.drawable.joker:
                 imgquiz=R.drawable.topi;
                 break;
             case R.drawable.topi:
@@ -79,9 +80,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.drawable.yay_removebg_preview:
                 imgquiz=R.drawable.joker;
-                break;
-            case R.drawable.joker:
-                imgquiz=R.drawable.anar;
                 break;
             default:
                 throw new IllegalStateException("unhandled exception: "+imgquiz);
@@ -123,18 +121,18 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        AlertDialog dialog=builder.create();
+        //AlertDialog dialog=builder.create();
 
         if(view.getId()==righAnswer){
-            dialog.setTitle("درست جواب !");     //show dialog box
-            dialog.show();
+            //dialog.setTitle("درست جواب !");     //show dialog box
+            //dialog.show();
             //show next question
             showNewImage();
             showNewOptions();
         }
         else{
-            dialog.setTitle("دوبارہ کوشش کریں !");
-            dialog.show();
+            //dialog.setTitle("دوبارہ کوشش کریں !");
+            //dialog.show();
         }
 
 
