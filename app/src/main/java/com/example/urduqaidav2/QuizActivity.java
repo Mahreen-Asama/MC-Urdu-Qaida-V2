@@ -17,7 +17,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     TextView sentence;
     ImageView imgQuiz;
     Button a,b,c,d;
-    //AlertDialog.Builder builder;
     int imgquiz = R.drawable.joker;
     int righAnswer = R.id.option_a;   //first one
 
@@ -121,18 +120,21 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        //AlertDialog dialog=builder.create();
+        AlertDialog.Builder builder=new AlertDialog.Builder(QuizActivity.this);
+        AlertDialog dialog;
 
         if(view.getId()==righAnswer){
-            //dialog.setTitle("درست جواب !");     //show dialog box
-            //dialog.show();
+            builder.setTitle("درست جواب !");     //show dialog box
+            dialog=builder.create();
+            dialog.show();
             //show next question
             showNewImage();
             showNewOptions();
         }
         else{
-            //dialog.setTitle("دوبارہ کوشش کریں !");
-            //dialog.show();
+            builder.setTitle("دوبارہ کوشش کریں !");
+            dialog=builder.create();
+            dialog.show();
         }
 
 
