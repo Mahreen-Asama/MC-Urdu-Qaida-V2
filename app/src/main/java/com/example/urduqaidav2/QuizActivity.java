@@ -28,16 +28,19 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         savedInstanceState.putString("opt-b",b.getText().toString());
         savedInstanceState.putString("opt-c",c.getText().toString());
         savedInstanceState.putString("opt-d",d.getText().toString());
+        savedInstanceState.putInt("rightAns",righAnswer);
     }
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         int imgid=savedInstanceState.getInt("quizImg");
+        imgquiz=imgid;
         imgQuiz.setImageResource(imgid);
         a.setText(savedInstanceState.getString("opt-a"));
         b.setText(savedInstanceState.getString("opt-b"));
         c.setText(savedInstanceState.getString("opt-c"));
         d.setText(savedInstanceState.getString("opt-d"));
+        righAnswer=savedInstanceState.getInt("rightAns");
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,12 +107,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         imgQuiz.setImageResource(imgquiz); //set new image option
     }
     void TestEnd(){
-        AlertDialog.Builder builder=new AlertDialog.Builder(QuizActivity.this);
-        builder.setTitle("شاباش! آپنے سیکھ لیا ہے");     //show dialog box
-
-        AlertDialog dialog=builder.create();
-        dialog.show();
-
         Intent intent=new Intent(QuizActivity.this,ChoiceActivity.class);
         startActivity(intent);
     }
@@ -153,12 +150,20 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         AlertDialog dialog;
 
         if(view.getId()==righAnswer){
-            builder.setTitle("درست جواب - شاباش !          ");     //show dialog box
-            dialog=builder.create();
-            dialog.show();
-            //show next question
-            showNewImage();
-            showNewOptions();
+            if(imgquiz==R.drawable.yay_removebg_preview){
+                builder.setTitle("شاباش! آپنے سیکھ لیا ہے        ");     //show dialog box
+                dialog=builder.create();
+                dialog.show();
+                showNewImage();     //test end function
+            }
+            else{
+                builder.setTitle("درست جواب - شاباش !          ");     //show dialog box
+                dialog=builder.create();
+                dialog.show();
+                //show next question
+                showNewImage();
+                showNewOptions();
+            }
         }
         else{
             builder.setTitle(" غلط جواب - دوبارہ کوشش کریں !       ");
