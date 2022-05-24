@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="right"
     tools:context=".QuizActivity">
 
     <Button
@@ -52,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:text="ج"
+        android:text="@string/p"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/option_d"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:text="ف"
+        android:text="@string/cy"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,14 +79,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choice_sentence"
-        app:srcCompat="@drawable/anar" />
+        app:srcCompat="@drawable/joker" />
 
     <Button
         android:id="@+id/option_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="68dp"
-        android:text="ا"
+        android:text="@string/zo"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/option_c"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="68dp"
-        android:text="ٹ"
+        android:text="@string/hm"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

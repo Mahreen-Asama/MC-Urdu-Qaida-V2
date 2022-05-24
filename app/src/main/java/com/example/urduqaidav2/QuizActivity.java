@@ -20,7 +20,25 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     int imgquiz = R.drawable.joker;
     int righAnswer = R.id.option_a;   //first one
 
-
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("quizImg",imgquiz);   //img id store
+        savedInstanceState.putString("opt-a",a.getText().toString());
+        savedInstanceState.putString("opt-b",b.getText().toString());
+        savedInstanceState.putString("opt-c",c.getText().toString());
+        savedInstanceState.putString("opt-d",d.getText().toString());
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        int imgid=savedInstanceState.getInt("quizImg");
+        imgQuiz.setImageResource(imgid);
+        a.setText(savedInstanceState.getString("opt-a"));
+        b.setText(savedInstanceState.getString("opt-b"));
+        c.setText(savedInstanceState.getString("opt-c"));
+        d.setText(savedInstanceState.getString("opt-d"));
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,13 +96,24 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 imgquiz=R.drawable.yay_removebg_preview;
                 break;
             case R.drawable.yay_removebg_preview:
-                imgquiz=R.drawable.joker;
+                TestEnd();
                 break;
             default:
                 throw new IllegalStateException("unhandled exception: "+imgquiz);
         }
         imgQuiz.setImageResource(imgquiz); //set new image option
     }
+    void TestEnd(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(QuizActivity.this);
+        builder.setTitle("شاباش! آپنے سیکھ لیا ہے");     //show dialog box
+
+        AlertDialog dialog=builder.create();
+        dialog.show();
+
+        Intent intent=new Intent(QuizActivity.this,ChoiceActivity.class);
+        startActivity(intent);
+    }
+
     void showNewOptions(){
         switch (righAnswer){
             case R.id.option_a:
@@ -124,7 +153,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         AlertDialog dialog;
 
         if(view.getId()==righAnswer){
-            builder.setTitle("درست جواب !");     //show dialog box
+            builder.setTitle("درست جواب - شاباش !          ");     //show dialog box
             dialog=builder.create();
             dialog.show();
             //show next question
@@ -132,7 +161,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             showNewOptions();
         }
         else{
-            builder.setTitle("دوبارہ کوشش کریں !");
+            builder.setTitle(" غلط جواب - دوبارہ کوشش کریں !       ");
             dialog=builder.create();
             dialog.show();
         }
