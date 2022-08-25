@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UrduQaidaV2">
         <activity
+            android:name=".QuizEndActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionListActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +36,6 @@
         <activity
             android:name=".QuizActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>

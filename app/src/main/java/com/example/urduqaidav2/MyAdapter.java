@@ -17,24 +17,22 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class MyAdapter extends ArrayAdapter{
+public class MyAdapter extends ArrayAdapter<String>{
 
-    public MyAdapter(@NonNull Context context, int resource, @NonNull List<QuizQuestion> objects) {
+    public MyAdapter(@NonNull Context context, int resource, List<String> objects) {
         super(context, resource, objects);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        QuizQuestion qnumber=getItem(position);
 
         convertView= LayoutInflater.from(getContext()).inflate(R.layout.questions_customized_list,parent,false);
 
         TextView swalNumber=convertView.findViewById(R.id.swal_number);
         ImageView img=convertView.findViewById(R.id.album_sign);
 
-        swalNumber.setText(qnumber.getName());     //write name of student in relevent field
-        img.setImageResource(stu.getImage());
+        swalNumber.setText(getItem(position).toString());     //write here question number
 
         //just to check which item is clicking
 

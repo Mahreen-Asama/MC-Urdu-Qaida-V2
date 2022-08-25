@@ -38,7 +38,7 @@ public class ChoiceActivity extends AppCompatActivity {
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ChoiceActivity.this,QuizActivity.class);
+                Intent intent=new Intent(ChoiceActivity.this,QuestionListActivity.class);
                 startActivity(intent);
             }
         });
