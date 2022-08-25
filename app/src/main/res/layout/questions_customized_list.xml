@@ -7,22 +7,22 @@
 
     <ImageView
         android:id="@+id/album_sign"
-        android:layout_width="65dp"
-        android:layout_height="53dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_album_24" />
 
     <TextView
         android:id="@+id/swal_number"
-        android:layout_width="wrap_content"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
         android:text="TextView"
+        android:textColor="@color/blue_900"
         android:textDirection="rtl"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toStartOf="@+id/album_sign"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

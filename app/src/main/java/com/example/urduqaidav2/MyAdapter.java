@@ -42,6 +42,7 @@ public class MyAdapter extends ArrayAdapter<String>{
             public void onClick(View view) {
 
                 Intent intent=new Intent(getContext(),QuizActivity.class);  //start quiz activity
+                intent.putExtra("position",position);
                 startActivity(getContext(),intent, Bundle.EMPTY);
             }
         });

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -17,8 +18,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     TextView sentence;
     ImageView imgQuiz;
     Button a,b,c,d;
-    int imgquiz = R.drawable.joker;
-    int righAnswer = R.id.option_a;   //first one
+    int imgquiz;
+    int righAnswer;   //first one
 
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
@@ -51,7 +52,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(QuizActivity.this,ChoiceActivity.class);
+                Intent intent=new Intent(QuizActivity.this,QuestionListActivity.class);
                 startActivity(intent);
             }
         });
@@ -63,12 +64,60 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         });*/
+
+        Intent intent=getIntent();
+        int index=intent.getIntExtra("position",-1);
+        Toast.makeText(this,index+"",Toast.LENGTH_SHORT).show();
+        if(index==0){
+            imgquiz=R.drawable.joker;
+            righAnswer=R.id.option_c;
+        }
+        else if(index==1){
+            imgquiz=R.drawable.topi;
+            righAnswer=R.id.option_a;
+        }
+        else if(index==2){
+            imgquiz=R.drawable.zkh_removebg_preview;
+            righAnswer=R.id.option_d;
+        }
+        else if(index==3){
+            imgquiz=R.drawable.snake1;
+            righAnswer=R.id.option_b;
+        }
+        else if(index==4){
+            imgquiz=R.drawable.brtn;
+            righAnswer=R.id.option_c;
+        }
+        else if(index==5){
+            imgquiz=R.drawable.tomato;
+            righAnswer=R.id.option_a;
+        }
+        else if(index==6){
+            imgquiz=R.drawable.gold;
+            righAnswer=R.id.option_d;
+        }
+        else if(index==7){
+            imgquiz=R.drawable.yay_removebg_preview;
+            righAnswer=R.id.option_b;
+        }
+        else if(index==8){
+            imgquiz=R.drawable.joker;
+            righAnswer=R.id.option_c;
+        }
+        else if(index==9){
+            imgquiz=R.drawable.topi;
+            righAnswer=R.id.option_a;
+        }
+
         sentence=findViewById(R.id.choice_sentence);
         imgQuiz=findViewById(R.id.img_quiz);
         a=findViewById(R.id.option_a);
         b=findViewById(R.id.option_b);
         c=findViewById(R.id.option_c);
         d=findViewById(R.id.option_d);
+
+        imgQuiz.setImageResource(imgquiz); //set new image option
+        showNewOptions();
 
         a.setOnClickListener(this);
         b.setOnClickListener(this);
@@ -107,7 +156,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         imgQuiz.setImageResource(imgquiz); //set new image option
     }
     void TestEnd(){
-        Intent intent=new Intent(QuizActivity.this,ChoiceActivity.class);
+        Intent intent=new Intent(QuizActivity.this,QuizEndActivity.class);
         startActivity(intent);
     }
 
@@ -151,10 +200,10 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         if(view.getId()==righAnswer){
             if(imgquiz==R.drawable.yay_removebg_preview){
-                builder.setTitle("شاباش! آپنے سیکھ لیا ہے        ");     //show dialog box
-                dialog=builder.create();
-                dialog.show();
-                showNewImage();     //test end function
+                //builder.setTitle("شاباش! آپنے سیکھ لیا ہے        ");     //show dialog box
+                //dialog=builder.create();
+                //dialog.show();
+                TestEnd();     //test end function
             }
             else{
                 builder.setTitle("درست جواب - شاباش !          ");     //show dialog box
